@@ -14,11 +14,14 @@ Software:
   Instead of 3–4 available stations per country, available stations are now grouped in sets of 28 on separate tabs (P1–Pxx).
 - PAUSE text on the display when playback is paused.
 - Expanded to include management of Hungarian stations. 
-- Backlight dims by 20% after 1 minutes of operation to extend battery life.
+- Backlight dims by 20% after 1 minutes of operation to extend battery life. You can also set a custom value before the flash, around line 32:
+      #define BACKLIGHT_FULL      200     //  0-255
+      #define BACKLIGHT_DIM       50      //  0-255
+      #define BACKLIGHT_DIM_AFTER 60000UL  // 1 minutes
   (This only works if you connect the display's BL-LED pin to an open pin.
   If these pins are directly powered, the software modification will not work.)
 - When selecting a station, scroll through names that are longer than the name field for better readability.
-- The circle in the lower-right corner is an green indicator that expands when you press and hold the play/pause/menu button (700 ms).
+- The circle in the lower-right corner is an green indicator that expands when you press and hold the play/pause/menu button (700 ms). In this field, you can see the current information from the buttons (or encoder).
 - In addition to the existing settings, you can also use an encoder or a 3-button solution!
 - The volume level is displayed in the top horizontal field.
 - In the center of the main screen is information about the currently playing track; in the left corner is the selected country (or ALL), and next to it are the genre  categories: Music, News, Jazz, Classical, Rock (or All).
