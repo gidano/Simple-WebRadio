@@ -28,4 +28,5 @@ Installing:
 - Configure the ESP32-S3 Supermini with the desired settings based on the photo in the Setup_Arduino_IDE folder. Remember: PSRAM must be enabled!.
 
 Troubleshooting:
-- If you encounter a panel where, after installation, the screen appears misaligned and/or you see 1-2px-wide stripes at the top/bottom or left/right edges, you can correct this by adjusting the offset setting around line 110 of the .ino file: "setColRowStart(0, 0);    // V2 at the blue panel: 2px col + 1px row offset"
+- If you encounter a panel where, after installation, the screen appears misaligned and/or you see 1-2px-wide stripes at the top/bottom or left/right edges, you can correct this by adjusting the offset setting around line 110 of the .ino file:
+"setColRowStart(0, 0);    // V2 at the blue panel: 2px col + 1px row offset"
