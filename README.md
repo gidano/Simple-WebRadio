@@ -10,6 +10,10 @@ Simple ESP32 Web Radio with Arduino IDE
 
 Rádióállomások kezelése a Community Radio Station Index alapján: https://de1.api.radio-browser.info/
 
+## Screenshot
+
+![Simple WebRadio](https://github.com/gidano/Simple-WebRadio/blob/main/Photos/radio_front.jpg)
+
 Hardware:
 - ESP32-S3 Supermini  -  https://www.aliexpress.com/item/1005006960134338.html
 - ST7735 128x160 4SPI RGB TFT display v1 - v2  -  https://www.aliexpress.com/item/1005009712175802.html
