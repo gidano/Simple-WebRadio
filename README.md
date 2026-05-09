@@ -12,7 +12,7 @@ Managing Radio Stations Based on the Community Radio Station Index: https://de1.
 
 ## Screenshot
 <p align="center">
-  <img src="https://github.com/gidano/Simple-WebRadio/blob/main/Photos/display.jpg" width="200"><br>
+  <img src="https://github.com/gidano/Simple-WebRadio/blob/main/Photos/display.jpg" width="200"><br><br>
   <img src="https://github.com/gidano/Simple-WebRadio/blob/main/Photos/radio_front.jpg" width="600">
 </p>
 
