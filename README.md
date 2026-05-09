@@ -1,4 +1,4 @@
-# Simple webradio
+# Simple WebRadio
 Simple ESP32 Web Radio with Arduino IDE
 
 Fork: TechTalkies Internet Radio  -  https://github.com/TechTalkies/YouTube/tree/main/101%20Internet%20Radio%20V2
@@ -15,3 +15,4 @@ Software:
 - Backlight dims by 50% after 3 minutes of operation to extend battery life
   (This only works if you connect the display's BL-LED pin to an open pin.
   If these pins are directly powered, the software modification will not work.)
+- When selecting a station, scroll through names that are longer than the name field for better readability
