@@ -12,8 +12,8 @@ Managing Radio Stations Based on the Community Radio Station Index: https://de1.
 
 ## Screenshot
 <p align="center">
-  <img src="[Simple WebRadio](https://github.com/gidano/Simple-WebRadio/blob/main/Photos/display.jpg)" width="200">
-  <img src="[Simple WebRadio](https://github.com/gidano/Simple-WebRadio/blob/main/Photos/radio_front.jpg))" width="600">
+  <img src="https://github.com/gidano/Simple-WebRadio/blob/main/Photos/display.jpg" width="200">
+  <img src="https://github.com/gidano/Simple-WebRadio/blob/main/Photos/radio_front.jpg" width="600">
 </p>
 
 Hardware:
