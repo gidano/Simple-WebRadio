@@ -18,7 +18,7 @@ Software:
   (This only works if you connect the display's BL-LED pin to an open pin.
   If these pins are directly powered, the software modification will not work.)
 - When selecting a station, scroll through names that are longer than the name field for better readability
-- The circle in the lower-right corner is an indicator that expands when you press and hold the play/pause/menu button (700 ms)
+- The circle in the lower-right corner is an green indicator that expands when you press and hold the play/pause/menu button (700 ms)
 - In addition to the existing settings, you can also use an encoder or a 3-button solution!
 
 Installing:
