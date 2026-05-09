@@ -1,47 +1,114 @@
-# Simple WebRadio
-Simple ESP32 Web Radio with Arduino IDE
+# Simple WebRadio / Egyszerű WebRádió
+
+Simple ESP32 Web Radio with Arduino IDE  
+Egyszerű ESP32 alapú internetes rádió Arduino IDE használatával
 
 <p align="center">
-  <!-- 
+  <!--
   <img src="https://img.shields.io/github/downloads/gidano/Simple-WebRadio/total?style=for-the-badge&cacheSeconds=60" alt="Total Downloads">   -->
   <img src="https://img.shields.io/github/stars/gidano/Simple-WebRadio?style=for-the-badge" alt="Stars">
   <img src="https://img.shields.io/github/repo-size/gidano/Simple-WebRadio?style=for-the-badge" alt="Repo size">
 </p>
 
-Managing Radio Stations Based on the Community Radio Station Index: https://de1.api.radio-browser.info/
+Managing Radio Stations Based on the Community Radio Station Index:  
+Rádióállomások kezelése a Community Radio Station Index alapján:  
+https://de1.api.radio-browser.info/
 
-## Screenshot
+---
+
+# Screenshot / Képernyőképek
+
 <p align="center">
   <img src="https://github.com/gidano/Simple-WebRadio/blob/main/Photos/display.jpg" width="200"><br><br>
   <img src="https://github.com/gidano/Simple-WebRadio/blob/main/Photos/radio_front.jpg" width="600">
 </p>
 
-Hardware:
-- ESP32-S3 Supermini  -  https://www.aliexpress.com/item/1005006960134338.html
-- ST7735 128x160 4SPI RGB TFT display v1 - v2  -  https://www.aliexpress.com/item/1005009712175802.html
-- KY-040 or EC11 rotary encoder - https://www.aliexpress.com/w/wholesale-encoder-rotary-arduino.html
-- or 3 buttons panel - https://www.aliexpress.com/w/wholesale-3-buttons-module.html
-- DAC 5102a - https://www.aliexpress.com/w/wholesale-pcm5102.html
-- or MAX98357a i2s amplifier - https://www.aliexpress.com/w/wholesale-max98357a-i2s-amplifier.html
+---
 
-Software:
-- Significantly modified with regard to managed stations.
-  Instead of 3–4 available stations per country, available stations are now grouped in sets of 28 on separate pages (P1–Pxx).
-- PAUSE text on the display when playback is paused.
-- Expanded to include management of Hungarian stations. 
-- Backlight dims by 20% after 1 minutes of operation to extend battery life. You can also set a custom value before the flash, around line 32:
-      #define BACKLIGHT_FULL      200     //  0-255
-      #define BACKLIGHT_DIM       50      //  0-255
-      #define BACKLIGHT_DIM_AFTER 60000UL  // 1 minutes
-  (This only works if you connect the display's BL-LED pin to an open pin.
-  If these pins are directly powered, the software modification will not work.)
-- When selecting a station, scroll through names that are longer than the name field for better readability.
-- The circle in the lower-right corner is an green indicator that expands when you press and hold the play/pause/menu button (700 ms). In this field, you can see the current information from the buttons (or encoder).
-- In addition to the existing settings, you can also use an encoder or a 3-button solution!
-- The volume level is displayed in the top horizontal field.
-- In the center of the main screen is information about the currently playing track; in the left corner is the selected country (or ALL), and next to it are the genre  categories: Music, News, Jazz, Classical, Rock (or All).
-- The current list of countries starts around line 54 in the code:
-  static const CountryEntry COUNTRIES[] = {
+# Hardware / Hardver
+
+- ESP32-S3 Supermini  
+  https://www.aliexpress.com/item/1005006960134338.html
+
+- ST7735 128x160 4SPI RGB TFT display v1 - v2  
+  https://www.aliexpress.com/item/1005009712175802.html
+
+- KY-040 or EC11 rotary encoder / KY-040 vagy EC11 forgó enkóder  
+  https://www.aliexpress.com/w/wholesale-encoder-rotary-arduino.html
+
+- or 3 buttons panel / vagy 3 gombos panel  
+  https://www.aliexpress.com/w/wholesale-3-buttons-module.html
+
+- DAC 5102a  
+  https://www.aliexpress.com/w/wholesale-pcm5102.html
+
+- or MAX98357a I2S amplifier / vagy MAX98357a I2S erősítő  
+  https://www.aliexpress.com/w/wholesale-max98357a-i2s-amplifier.html
+
+---
+
+# Software Features / Szoftver funkciók
+
+- Significantly modified regarding station management.  
+  Jelentősen módosított állomáskezelés.
+
+- Instead of only 3–4 stations per country, stations are grouped into pages of 28 entries (P1–Pxx).  
+  A korábbi országonkénti 3–4 állomás helyett az állomások most 28-as csoportokba rendezve, külön oldalakon (P1–Pxx) jelennek meg.
+
+- PAUSE text appears on the display when playback is paused.  
+  Lejátszás szüneteltetésekor PAUSE felirat jelenik meg a kijelzőn.
+
+- Expanded with Hungarian radio station management.  
+  Magyar rádióállomások támogatásával bővítve.
+
+- Backlight automatically dims after 1 minute to extend battery life.  
+  A háttérvilágítás 1 perc után automatikusan csökken az akkumulátoros üzemidő növelése érdekében.
+
+```cpp
+#define BACKLIGHT_FULL      200     // 0-255
+#define BACKLIGHT_DIM       50      // 0-255
+#define BACKLIGHT_DIM_AFTER 60000UL // 1 minute
+```
+
+- You can customize the brightness values before flashing the firmware.  
+  A fényerő értékek a firmware feltöltése előtt szabadon módosíthatók.
+
+- This only works if the display BL-LED pin is connected to a controllable GPIO pin.  
+  Ez csak akkor működik, ha a kijelző BL-LED lába egy vezérelhető GPIO pinre van kötve.
+
+- Long station names automatically scroll during station selection for better readability.  
+  A hosszú állomásnevek automatikusan görgetve jelennek meg az olvashatóság érdekében.
+
+- The green circle in the bottom-right corner expands when holding the play/pause/menu button for 700 ms.  
+  A jobb alsó sarokban található zöld kör 700 ms nyomva tartás után kitágul.
+
+- This area displays the current button or encoder action.  
+  Ebben a mezőben látható az aktuális gomb- vagy enkóder művelet.
+
+- Supports both rotary encoder and 3-button control.  
+  Forgó enkóderes és 3 gombos vezérlést is támogat.
+
+- The current volume level is displayed in the top status bar.  
+  Az aktuális hangerő a felső státuszsávban jelenik meg.
+
+- The center of the screen displays current track information.  
+  A kijelző közepén az aktuálisan lejátszott szám információi láthatók.
+
+- The selected country and category are displayed in the top-left corner.  
+  A bal felső sarokban a kiválasztott ország és kategória jelenik meg.
+
+- Available categories include: Music, News, Jazz, Classical, Rock, and All.  
+  Elérhető kategóriák: Music, News, Jazz, Classical, Rock és All.
+
+---
+
+# Country List / Országlista
+
+The current country list begins around line 54 in the source code.  
+Az aktuális országlista körülbelül az 54. sortól található a forráskódban.
+
+```cpp
+static const CountryEntry COUNTRIES[] = {
   { "all", "All" },
   { "HU", "Hungary" },
   { "US", "USA" },
@@ -62,13 +129,38 @@ Software:
   { "ZA", "South Africa" },
   { "SG", "Singapore" },
   { "AE", "UAE" },
+};
+```
 
-Installing:
-- Before uploading, open the secrets.h file located next to the .ino file and fill in the WiFi SSID and Password fields with your own information.
-- Configure the ESP32-S3 Supermini with the desired settings based on the photo in the Setup_Arduino_IDE folder. Remember: PSRAM must be enabled!.
+---
 
-Troubleshooting:
-- If you encounter a panel where, after installation, the screen appears misaligned and/or you see 1-2px-wide stripes at the top/bottom or left/right edges, you can correct this by adjusting the offset setting around line 110 of the .ino file:
-"setColRowStart(0, 0);    // V2 at the blue panel: 2px col + 1px row offset"
+# Installation / Telepítés
 
-Fork: TechTalkies Internet Radio  -  https://github.com/TechTalkies/YouTube/tree/main/101%20Internet%20Radio%20V2
+- Before uploading the firmware, open the `secrets.h` file and enter your WiFi SSID and password.  
+  A firmware feltöltése előtt nyisd meg a `secrets.h` fájlt, és add meg a saját WiFi SSID és jelszó adatokat.
+
+- Configure the ESP32-S3 Supermini according to the settings shown in the `Setup_Arduino_IDE` folder.  
+  Állítsd be az ESP32-S3 Supermini modult a `Setup_Arduino_IDE` mappában található képek alapján.
+
+- Important: PSRAM must be enabled.  
+  Fontos: a PSRAM engedélyezése kötelező.
+
+---
+
+# Troubleshooting / Hibaelhárítás
+
+- If the display appears shifted after installation, or you see 1–2 pixel wide stripes on the edges, adjust the display offset settings around line 110 in the `.ino` file.  
+  Ha a kijelző elcsúszva jelenik meg, vagy 1–2 pixeles csíkok látszanak a széleken, módosítsd az offset beállításokat a `.ino` fájl körülbelül 110. sorában.
+
+```cpp
+setColRowStart(0, 0); // V2 blue panel: 2px column + 1px row offset
+```
+
+---
+
+# Credits / Köszönet
+
+Fork based on / Az alapprojekt:  
+TechTalkies Internet Radio  
+https://github.com/TechTalkies/YouTube/tree/main/101%20Internet%20Radio%20V2
+
