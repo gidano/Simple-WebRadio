@@ -11,7 +11,7 @@ Hardware:
 
 Software:
 - Significantly modified with regard to managed stations.
-  Instead of 3–4 available stations per country, available stations are now grouped in sets of 28 on separate tabs (P1–Pxx).
+  Instead of 3–4 available stations per country, available stations are now grouped in sets of 28 on separate pages (P1–Pxx).
 - PAUSE text on the display when playback is paused.
 - Expanded to include management of Hungarian stations. 
 - Backlight dims by 20% after 1 minutes of operation to extend battery life. You can also set a custom value before the flash, around line 32:
@@ -25,6 +25,28 @@ Software:
 - In addition to the existing settings, you can also use an encoder or a 3-button solution!
 - The volume level is displayed in the top horizontal field.
 - In the center of the main screen is information about the currently playing track; in the left corner is the selected country (or ALL), and next to it are the genre  categories: Music, News, Jazz, Classical, Rock (or All).
+- The current list of countries starts around line 54 in the code:
+  static const CountryEntry COUNTRIES[] = {
+  { "all", "All" },
+  { "HU", "Hungary" },
+  { "US", "USA" },
+  { "IN", "India" },
+  { "GB", "UK" },
+  { "DE", "Germany" },
+  { "FR", "France" },
+  { "JP", "Japan" },
+  { "CA", "Canada" },
+  { "AU", "Australia" },
+  { "IT", "Italy" },
+  { "ES", "Spain" },
+  { "BR", "Brazil" },
+  { "MX", "Mexico" },
+  { "NL", "Netherlands" },
+  { "SE", "Sweden" },
+  { "NO", "Norway" },
+  { "ZA", "South Africa" },
+  { "SG", "Singapore" },
+  { "AE", "UAE" },
 
 Installing:
 - Before uploading, open the secrets.h file located next to the .ino file and fill in the WiFi SSID and Password fields with your own information.
