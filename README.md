@@ -8,6 +8,10 @@ Rádióállomások kezelése a Community Radio Station Index alapján: https://d
 Hardware:
 - ESP32-S3 Supermini  -  https://www.aliexpress.com/item/1005006960134338.html
 - ST7735 128x160 4SPI RGB TFT display v1 - v2  -  https://www.aliexpress.com/item/1005009712175802.html
+- KY-040 or EC11 rotary encoder - https://www.aliexpress.com/w/wholesale-encoder-rotary-arduino.html
+- or 3 buttons panel - https://www.aliexpress.com/w/wholesale-3-buttons-module.html
+- DAC 5102a - https://www.aliexpress.com/w/wholesale-pcm5102.html
+- or MAX98357a i2s amplifier - https://www.aliexpress.com/w/wholesale-max98357a-i2s-amplifier.html
 
 Software:
 - Significantly modified with regard to managed stations.
