@@ -20,6 +20,8 @@ Software:
 - When selecting a station, scroll through names that are longer than the name field for better readability
 - The circle in the lower-right corner is an green indicator that expands when you press and hold the play/pause/menu button (700 ms)
 - In addition to the existing settings, you can also use an encoder or a 3-button solution!
+- The volume level is displayed in the top horizontal field
+- In the center of the main screen is information about the currently playing track; in the left corner is the selected country (or ALL), and next to it are the genre  categories: Music, News, Jazz, Classical, Rock (or All)
 
 Installing:
 - Before uploading, open the secrets.h file located next to the .ino file and fill in the WiFi SSID and Password fields with your own information
