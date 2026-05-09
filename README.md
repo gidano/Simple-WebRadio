@@ -1,7 +1,12 @@
 # Simple WebRadio
 Simple ESP32 Web Radio with Arduino IDE
 
-Fork: TechTalkies Internet Radio  -  https://github.com/TechTalkies/YouTube/tree/main/101%20Internet%20Radio%20V2
+<p align="center">
+  <!-- 
+  <img src="https://img.shields.io/github/downloads/gidano/Simple-WebRadio/total?style=for-the-badge&cacheSeconds=60" alt="Total Downloads">   -->
+  <img src="https://img.shields.io/github/stars/gidano/Simple-WebRadio?style=for-the-badge" alt="Stars">
+  <img src="https://img.shields.io/github/repo-size/gidano/Simple-WebRadio?style=for-the-badge" alt="Repo size">
+</p>
 
 Rádióállomások kezelése a Community Radio Station Index alapján: https://de1.api.radio-browser.info/
 
@@ -59,3 +64,5 @@ Installing:
 Troubleshooting:
 - If you encounter a panel where, after installation, the screen appears misaligned and/or you see 1-2px-wide stripes at the top/bottom or left/right edges, you can correct this by adjusting the offset setting around line 110 of the .ino file:
 "setColRowStart(0, 0);    // V2 at the blue panel: 2px col + 1px row offset"
+
+Fork: TechTalkies Internet Radio  -  https://github.com/TechTalkies/YouTube/tree/main/101%20Internet%20Radio%20V2
