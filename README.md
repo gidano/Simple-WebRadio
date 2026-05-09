@@ -8,7 +8,7 @@ Simple ESP32 Web Radio with Arduino IDE
   <img src="https://img.shields.io/github/repo-size/gidano/Simple-WebRadio?style=for-the-badge" alt="Repo size">
 </p>
 
-Rádióállomások kezelése a Community Radio Station Index alapján: https://de1.api.radio-browser.info/
+Managing Radio Stations Based on the Community Radio Station Index: https://de1.api.radio-browser.info/
 
 ## Screenshot
 
