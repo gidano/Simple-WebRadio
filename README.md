@@ -18,3 +18,7 @@ Software:
   (This only works if you connect the display's BL-LED pin to an open pin.
   If these pins are directly powered, the software modification will not work.)
 - When selecting a station, scroll through names that are longer than the name field for better readability
+
+Installing:
+- Before uploading, open the secrets.h file located next to the .ino file and fill in the WiFi SSID and Password fields with your own information
+- Configure the ESP32-S3 Supermini with the desired settings based on the photo in the Setup_Arduino_IDE folder. Remember: PSRAM must be enabled!
