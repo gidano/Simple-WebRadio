@@ -3,6 +3,8 @@ Simple ESP32 Web Radio with Arduino IDE
 
 Fork: TechTalkies Internet Radio  -  https://github.com/TechTalkies/YouTube/tree/main/101%20Internet%20Radio%20V2
 
+Rádióállomások kezelése a Community Radio Station Index alapján: https://de1.api.radio-browser.info/
+
 Hardware:
 - ESP32-S3 Supermini  -  https://www.aliexpress.com/item/1005006960134338.html
 - ST7735 128x160 4SPI RGB TFT display V1  -  https://www.aliexpress.com/item/1005009712175802.html
