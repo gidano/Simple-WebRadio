@@ -7,7 +7,7 @@ Rádióállomások kezelése a Community Radio Station Index alapján: https://d
 
 Hardware:
 - ESP32-S3 Supermini  -  https://www.aliexpress.com/item/1005006960134338.html
-- ST7735 128x160 4SPI RGB TFT display V1  -  https://www.aliexpress.com/item/1005009712175802.html
+- ST7735 128x160 4SPI RGB TFT display v1 - v2  -  https://www.aliexpress.com/item/1005009712175802.html
 
 Software:
 - Significantly modified with regard to managed stations.
