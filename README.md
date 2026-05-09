@@ -12,3 +12,6 @@ Software:
   Instead of 3–4 available stations per country, available stations are now grouped in sets of 28 on separate tabs (P1–Pxx)
 - PAUSE button
 - Expanded to include management of Hungarian stations 
+- Backlight dims by 50% after 3 minutes of operation to extend battery life
+  (This only works if you connect the display's BL-LED pin to an open pin.
+  If these pins are directly powered, the software modification will not work.)
