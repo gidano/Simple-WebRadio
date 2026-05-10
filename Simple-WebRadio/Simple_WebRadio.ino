@@ -1,7 +1,9 @@
 /* -------------------------------------------------
 Copyright (c)
-Arduino project by Tech Talkies YouTube Channel.
-https://www.youtube.com/@techtalkies1
+TechTalkies Internet Radio
+https://github.com/TechTalkies/YouTube/tree/main/101%20Internet%20Radio%20V2
+
+Fork by gidano | https://github.com/gidano/Simple-WebRadio
 -------------------------------------------------*/
 
 #include <WiFi.h>
