@@ -1,9 +1,9 @@
-# Smart / Enhanced WebRadio – Funkciókülönbségek  
-# Smart / Enhanced WebRadio – Feature Differences
+# Simple / Smart WebRadio – Funkciókülönbségek  
+# Simple / Smart WebRadio – Feature Differences
 
-Ez a dokumentum az eredeti minimalista WebRadio firmware és a jelenlegi Smart/Enhanced WebRadio állapot közti főbb tudás- és funkciókülönbségeket foglalja össze.
+Ez a dokumentum az eredeti minimalista WebRadio firmware és a jelenlegi Smart WebRadio állapot közti főbb tudás- és funkciókülönbségeket foglalja össze.
 
-This document summarizes the main feature and capability differences between the original minimal WebRadio firmware and the current Smart/Enhanced WebRadio version.
+This document summarizes the main feature and capability differences between the original minimal WebRadio firmware and the current Smart WebRadio version.
 
 ---
 
@@ -58,7 +58,7 @@ A mostani verzió már egy jóval komplettabb, önállóbb kis webrádió firmwa
 ### 2. Partition Manager kompatibilitás
 
 - bekerült a soros MRSPIFS protokoll támogatása
-- a saját LittleFS-SPIFFS Partition Managerrel elérhető a rádió SPIFFS partíciója
+- a saját LittleFS-SPIFFS Partition Managerrel elérhető a rádió SPIFFS partíciója - https://github.com/gidano/myRadio-SPIFFS-Manager
 - fájlok listázása, írása, olvasása, törlése USB soros kapcsolaton keresztül
 - `/stations.txt` frissíthető külön ESPConnect nélkül
 - a normál rádió funkciók megtartása mellett működik
@@ -153,8 +153,8 @@ REBOOT
 
 ### 9. Jobb UI elrendezés
 
-- country gomb bal oldalon
-- genre gomb jobb oldalon
+- ország gomb bal oldalon
+- műfaj gomb jobb oldalon
 - bitrate/codec mező középen
 - hosszú nyomás indikátor kör átkerült a felső Volume sor jobb végére
 - hangerő pöttyök közelebb kerültek a `Volume` felirathoz
